@@ -21,7 +21,7 @@ public class Vehicle {
     public static final int FLYING = 1;
 
     // this is initial vehicle setup
-    int Altitude = (int) (Math.random() * 3000) + 5000;
+    int Altitude = Simulation.randomaltitude();
     int PrevAltitude= 8000;
 
     int Velocity= 1000;
