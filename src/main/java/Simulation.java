@@ -81,8 +81,8 @@ public class Simulation {
         Simulation sim = new Simulation(new Vehicle(Simulation.randomaltitude()));
         // create a new BurnInputStream
 //        BurnInputStream burnInputStream = new BurnInputStream();
-        OnBoardComputer burnInputStream = new OnBoardComputer();
+//        OnBoardComputer burnInputStream = new OnBoardComputer();
         // pass the new BurnInputStream to the runSimulation method
-        sim.runSimulation(burnInputStream);
+        sim.runSimulation(new OnBoardComputer());
     }
 }
