@@ -13,7 +13,7 @@ public class Vehicle {
     String dead = "\nCRASH!!\n\tThere were no survivors.\n\n";
     public static final int DEAD = -3;
     String crashed = "\nThe Starship crashed. Good luck getting back home. Elon is pissed.\n\n";
-    public static final int CRASHED = 0;
+    public static final int CRASHED = -2;
     String emptyfuel = "\nThere is no fuel left. You're floating around like Major Tom.\n\n";
     public static final int EMPTYFUEL = -1;
     String success = "\nYou made it! Good job!\n\n";
