@@ -21,7 +21,7 @@ public class Vehicle {
     public static final int FLYING = 1;
 
     // this is initial vehicle setup
-    int Altitude= 8000;
+    int Altitude = (int) (Math.random() * 3000) + 5000;
     int PrevAltitude= 8000;
 
     int Velocity= 1000;
@@ -89,7 +89,7 @@ public class Vehicle {
 
     public DescentEvent getStatus(int tick) {
         // create a return a new DescentEvent object
-        DescentEvent descentEvent = new DescentEvent(1, Velocity, Fuel, Altitude, tick);
+        DescentEvent descentEvent = new DescentEvent(tick, Velocity, Fuel, Altitude, Flying);
         // filled in with the state of the vehicle.
         return descentEvent;
     }
